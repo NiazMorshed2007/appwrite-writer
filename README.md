@@ -1,4 +1,5 @@
-![appwrite-writer](https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/d08d738a-ae6c-4751-810c-7729669abfd6)
+![appwrite-writer](https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/a203decd-76fe-4204-99e3-aeccd0ba7c48)
+
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
