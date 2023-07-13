@@ -1,19 +1,4 @@
-<a href="https://novel.sh">
-  <img alt="Novel is a Notion-style WYSIWYG editor with AI-powered autocompletions." src="/app/opengraph-image.png">
-  <h1 align="center">Novel</h1>
-</a>
-
-<p align="center">
-  An open-source Notion-style WYSIWYG editor with AI-powered autocompletions. 
-</p>
-
-<p align="center">
-  <a href="https://news.ycombinator.com/item?id=36360789"><img src="https://img.shields.io/badge/Hacker%20News-369-%23FF6600" alt="Hacker News"></a>
-  <a href="https://github.com/steven-tey/novel/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/steven-tey/novel?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
-  </a>
-  <a href="https://github.com/steven-tey/novel"><img src="https://img.shields.io/github/stars/steven-tey/novel?style=social" alt="Novel.sh's GitHub repo"></a>
-</p>
+![appwrite-writer](https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/d08d738a-ae6c-4751-810c-7729669abfd6)
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
@@ -27,11 +12,11 @@
 
 ## Introduction
 
-[Novel](https://novel.sh/) is a Notion-style WYSIWYG editor with AI-powered autocompletions.
+Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions powered by Appwrite and [Novel](https://github.com/steven-tey/novel).
 
 Here's a quick 30-second demo:
 
-https://github.com/steven-tey/novel/assets/28986134/2099877f-4f2b-4b1c-8782-5d803d63be5c
+Video Coming.....
 
 <br />
 
@@ -43,19 +28,15 @@ You can deploy your own version of Novel to Vercel with one click:
 
 ## Setting Up Locally
 
-To set up Novel locally, you'll need to clone the repository and set up the following environment variables:
+To set up Novel locally, you'll need to clone the repository and setup environment variables described in the `.env.example`
 
-- `OPENAI_API_KEY` – your OpenAI API key (you can get one [here](https://platform.openai.com/account/api-keys))
-- `BLOB_READ_WRITE_TOKEN` – your Vercel Blob read/write token (currently [still in beta](https://vercel.com/docs/storage/vercel-blob/quickstart#quickstart), but feel free to [DM me on Twitter](https://twitter.com/steventey) for access)
-
-If you've deployed this to Vercel, you can also use [`vc env pull`](https://vercel.com/docs/cli/env#exporting-development-environment-variables) to pull the environment variables from your Vercel project.
 
 ## Tech Stack
 
 Novel is built on the following stack:
 
+- [Appwrite](https://appwrite.io/) - backend 
 - [Next.js](https://nextjs.org/) – framework
-- [Tiptap](https://tiptap.dev/) – text editor
 - [OpenAI](https://openai.com/) - AI completions
 - [Vercel AI SDK](https://sdk.vercel.ai/docs) – AI library
 - [Vercel](https://vercel.com) – deployments
@@ -64,15 +45,6 @@ Novel is built on the following stack:
 
 ## Contributing
 
-Here's how you can contribute:
-
-- [Open an issue](https://github.com/steven-tey/novel/issues) if you believe you've encountered a bug.
-- Make a [pull request](https://github.com/steven-tey/novel/pull) to add new features/make quality-of-life improvements/fix bugs.
-
 ## Author
 
-- Steven Tey ([@steventey](https://twitter.com/steventey))
-
-## License
-
-Licensed under the [MIT license](https://github.com/steven-tey/novel/blob/main/LICENSE.md).
+- Niaz Morshed ([@niazmorshed_](https://twitter.com/niazmorshed_))
