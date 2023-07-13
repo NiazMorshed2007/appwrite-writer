@@ -2,11 +2,8 @@
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
   <a href="#setting-up-locally"><strong>Setting Up Locally</strong></a> ·
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-  <a href="#contributing"><strong>Contributing</strong></a> ·
-  <a href="#license"><strong>License</strong></a>
 </p>
 <br/>
 
@@ -16,15 +13,9 @@ Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions
 
 Here's a quick 30-second demo:
 
-Video Coming.....
+`Video Coming.....`
 
 <br />
-
-## Deploy Your Own
-
-You can deploy your own version of Novel to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://stey.me/novel-deploy)
 
 ## Setting Up Locally
 
@@ -43,7 +34,6 @@ Novel is built on the following stack:
 - [TailwindCSS](https://tailwindcss.com/) – styles
 - [Cal Sans](https://github.com/calcom/font) – font
 
-## Contributing
 
 ## Author
 
