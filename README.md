@@ -18,14 +18,9 @@ https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/f7fba7f5-d902
 
 <br />
 
-## Setting Up Locally
-
-To set up Novel locally, you'll need to clone the repository and setup environment variables described in the `.env.example`
-
-
 ## Tech Stack
 
-Novel is built on the following stack:
+Appwrite Writer is built on the following stack:
 
 - [Appwrite](https://appwrite.io/) - backend 
 - [Next.js](https://nextjs.org/) – framework
