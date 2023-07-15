@@ -23,7 +23,7 @@ export default function Page() {
           Writer and unleash your creativity like never before.
         </p>
         <div className="button-wrapper flex items-center mt-5 gap-3">
-          <Link href="/playground">
+          <Link href="/login">
             <button className="bg-black hover:bg-black/70 text-gray-100 px-5 text-sm py-3 rounded-full">
               Visit Playgroud
             </button>

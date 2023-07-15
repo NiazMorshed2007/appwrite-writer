@@ -18,6 +18,14 @@ const Footer = () => {
         {" "}
         Niaz Morshed
       </Link>
+      | Editor powered by{" "}
+      <Link
+        href={"https://github.com/steven-tey/novel"}
+        className="underline"
+        target="_blank"
+      >
+        Novel
+      </Link>
     </footer>
   );
 };
