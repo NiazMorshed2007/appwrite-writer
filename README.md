@@ -10,11 +10,11 @@
 
 ## Introduction
 
-Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions powered by Appwrite and [Novel](https://github.com/steven-tey/novel).
+Appwrite Writer is a Notion-style WYSIWYG editor with AI-powered autocompletions powered by Appwrite and [Novel] (https://github.com/steven-tey/novel). It's goal is to give you an example of how powerful things you can build with Appwrite. Use this project to build your next cool project. And share love by sharing on social!
 
-Here's a quick 30-second demo:
 
-`Video Coming.....`
+https://github.com/NiazMorshed2007/appwrite-writer/assets/77217706/f7fba7f5-d902-473f-9e0f-82e05c4e7797
+
 
 <br />
 
@@ -30,6 +30,7 @@ Novel is built on the following stack:
 - [Appwrite](https://appwrite.io/) - backend 
 - [Next.js](https://nextjs.org/) – framework
 - [OpenAI](https://openai.com/) - AI completions
+- [Novel](https://github.com/steven-tey/novel)
 - [Vercel AI SDK](https://sdk.vercel.ai/docs) – AI library
 - [Vercel](https://vercel.com) – deployments
 - [TailwindCSS](https://tailwindcss.com/) – styles
