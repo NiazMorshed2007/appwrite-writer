@@ -10,8 +10,10 @@ import { useDebouncedCallback } from "use-debounce";
 import { EditorBubbleMenu } from "./components";
 import { TiptapExtensions } from "./extensions";
 import { TiptapEditorProps } from "./props";
+import LoadingCircle from "../icons/loading-circle";
 
 export default function Editor() {
+  const [docId, setDocId] = useState<string>(""); // TODO: [1
   const [content, setContent] = useState({});
   const [saveStatus, setSaveStatus] = useState("Saved");
   const [hydrated, setHydrated] = useState(false);
@@ -19,11 +21,9 @@ export default function Editor() {
   const debouncedUpdates = useDebouncedCallback(async ({ editor }) => {
     const json = editor.getJSON();
     setSaveStatus("Saving...");
-    // setContent(json);
-    const updatedContent = await updateContent("64afa09fcb8bac9307d1", {
+    const updatedContent = await updateContent(docId, {
       content: JSON.stringify(json),
     });
-    console.log(updatedContent);
     // Simulate a delay in saving.
     setTimeout(() => {
       setSaveStatus("Saved");
@@ -44,12 +44,15 @@ export default function Editor() {
           from: selection.from - 2,
           to: selection.from,
         });
-        complete(
-          getPrevText(e.editor, {
-            chars: 5000,
-          })
+        window.alert(
+          "Sorry, this feature is not available on production. Setup locally with your API to use AI writing."
         );
-        // complete(e.editor.storage.markdown.getMarkdown());
+        // TODO: [1] Uncomment this to enable completion
+        // complete(
+        //   getPrevText(e.editor, {
+        //     chars: 5000,
+        //   })
+        // );
       } else {
         debouncedUpdates(e);
       }
@@ -127,14 +130,16 @@ export default function Editor() {
   }, [editor, content, hydrated]);
 
   useEffect(() => {
-    console.log("fetching content");
     const fetchContent = async () => {
-      const data = await getContent("64afa09fcb8bac9307d1");
-      setContent(JSON.parse(data.content));
-      console.log(data);
+      try {
+        const data = await getContent();
+        setDocId(data.documents[0].$id);
+        setContent(JSON.parse(data.documents[0].content));
+      } catch (err) {
+        console.error(err);
+      }
     };
     fetchContent();
-    console.log("fetched content");
   }, []);
 
   return (
@@ -148,7 +153,7 @@ export default function Editor() {
         {saveStatus}
       </div>
       {editor && <EditorBubbleMenu editor={editor} />}
-      <EditorContent editor={editor} />
+      {docId !== "" ? <EditorContent editor={editor} /> : <LoadingCircle />}
     </div>
   );
 }

@@ -67,6 +67,12 @@ let api: any = {
       );
   },
 
+  getDocuments: (collectionId: string, query: any) => {
+    return api
+      .provider()
+      .database.listDocuments(databaseId, collectionId, query);
+  },
+
   getDocument: (collectionId: string, documentId: string, queries: any) => {
     return api
       .provider()

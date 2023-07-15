@@ -1,13 +1,14 @@
 "use client";
 
 import { RegisterInterface, register } from "@/lib/services/auth.service";
+import { createContent } from "@/lib/services/content.service";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "sonner";
 
-const RegisterForm = (): JSX.Element => {
+const RegisterForm = () => {
   const [data, setData] = useState<RegisterInterface>({
     name: "",
     email: "",
@@ -42,6 +43,9 @@ const RegisterForm = (): JSX.Element => {
       });
       if (user) {
         router.push("/playground");
+        await createContent({
+          userId: user.$id!,
+        });
       }
     } catch (err: any) {
       toast.error(err.message);

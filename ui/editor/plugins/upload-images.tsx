@@ -98,7 +98,7 @@ export function startImageUpload(file: File, view: EditorView, pos: number) {
     // Otherwise, insert it at the placeholder's position, and remove
     // the placeholder
 
-    const imageSrc = typeof src === "object" ? reader.result : src;
+    const imageSrc = src.fileUrl || reader.result;
 
     const node = schema.nodes.image.create({ src: imageSrc });
     const transaction = view.state.tr

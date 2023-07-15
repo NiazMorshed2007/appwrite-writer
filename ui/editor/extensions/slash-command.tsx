@@ -282,12 +282,15 @@ const CommandList = ({
       const item = items[index];
       if (item) {
         if (item.title === "Continue writing") {
-          complete(
-            getPrevText(editor, {
-              chars: 5000,
-              offset: 1,
-            })
+          window.alert(
+            "Sorry, this feature is not available on production. Setup locally with your API to use AI writing."
           );
+          // complete(
+          //   getPrevText(editor, {
+          //     chars: 5000,
+          //     offset: 1,
+          //   })
+          // );
         } else {
           command(item);
         }

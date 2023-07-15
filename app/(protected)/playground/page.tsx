@@ -1,7 +1,5 @@
 import Menu from "@/app/menu";
 import Editor from "@/ui/editor";
-import Github from "@/ui/icons/github";
-import React from "react";
 
 const Page = () => {
   return (

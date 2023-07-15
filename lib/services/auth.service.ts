@@ -49,3 +49,7 @@ export const getSession = async () => {
     console.error("Error occurred during getSession:", error);
   }
 };
+
+export const logout = async () => {
+  return await api.deleteCurrentSession();
+};

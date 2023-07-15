@@ -1,11 +1,11 @@
 "use client";
 
+import Logo from "@/ui/Logo";
 import { Github, MoonIcon, SunIcon, Twitter } from "lucide-react";
+import { useTheme } from "next-themes";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import React from "react";
-import { useTheme } from "next-themes";
-import Logo from "@/ui/Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 

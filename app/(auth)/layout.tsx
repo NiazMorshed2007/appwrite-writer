@@ -4,9 +4,8 @@ import { getSession } from "@/lib/services/auth.service";
 import { Loader2 } from "lucide-react";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +23,13 @@ const AuthLayout: React.FC<Props> = ({ children }) => {
         const session: any = await getSession();
         if (session) {
           setAuth(true);
-          router.replace("/space");
+          router.replace("/playground");
         } else {
           setAuth(false);
         }
       } catch (error: any) {
         console.error("Error checking session:", error);
         setAuth(false);
-      } finally {
       }
     };
 

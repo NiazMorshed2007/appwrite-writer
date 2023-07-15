@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "sonner";
 
-const LoginForm = (): JSX.Element => {
+const LoginForm = () => {
   const router: AppRouterInstance = useRouter();
   const [data, setData] = useState<LoginInterface>({ email: "", password: "" });
   const [loading, setLoading] = useState<boolean>(false);
