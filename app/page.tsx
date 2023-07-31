@@ -25,7 +25,7 @@ export default function Page() {
         <div className="button-wrapper flex items-center mt-5 gap-3">
           <Link href="/login">
             <button className="bg-black hover:bg-black/70 text-gray-100 px-5 text-sm py-3 rounded-full">
-              Visit Playgroud
+              Visit Playground
             </button>
           </Link>
           <button className="bg-orange-700 hover:bg-orange-700/70 px-5 flex items-center gap-2 text-sm py-2 rounded-full">
